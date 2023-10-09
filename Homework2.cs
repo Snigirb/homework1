@@ -17,50 +17,50 @@
 
 
 //Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-void CutNumber (int num){
-    if (num<100){
-        Console.WriteLine("third digit doesnot exist");
-    }
-        else if(num>99 && num<1000){
-        int new_num=num%10;
-        Console.WriteLine($"Third digit is {new_num}");
-    }
-    else if(num>999 && num<10000){
-        int first_digit = num/10;
-        int new_num = first_digit%10;
-        Console.WriteLine($"Third digit is {new_num}");
-    }
-    else if(num>9999 && num<100000){
-        int first_digit = num/100;
-        int new_num = first_digit%10;
-        Console.WriteLine($"Third digit is {new_num}");
-    }
-    else if(num>99999 && num<1000000){
-        int first_digit = num/1000;
-        int new_num = first_digit%10;
-        Console.WriteLine($"Third digit is {new_num}");
-    }
-    else if(num>999999 && num<10000000){
-        int first_digit = num/10000;
-        int new_num = first_digit%10;
-        Console.WriteLine($"Third digit is {new_num}");
-    }
-    else if(num>9999999 && num<100000000){
-        int first_digit = num/100000;
-        int new_num = first_digit%10;
-        Console.WriteLine($"Third digit is {new_num}");
-    }
-    else if(num>99999999 && num<1000000000){
-        int first_digit = num/1000000;
-        int new_num = first_digit%10;
-        Console.WriteLine($"Third digit is {new_num}");
-    }
-    else
-        Console.WriteLine($"The number is too big");
-}
-Console.WriteLine("Enter the number :");
-int number = Convert.ToInt32(Console.ReadLine());
-CutNumber(number);
+// void CutNumber (int num){
+//     if (num<100){
+//         Console.WriteLine("third digit doesnot exist");
+//     }
+//         else if(num>99 && num<1000){
+//         int new_num=num%10;
+//         Console.WriteLine($"Third digit is {new_num}");
+//     }
+//     else if(num>999 && num<10000){
+//         int first_digit = num/10;
+//         int new_num = first_digit%10;
+//         Console.WriteLine($"Third digit is {new_num}");
+//     }
+//     else if(num>9999 && num<100000){
+//         int first_digit = num/100;
+//         int new_num = first_digit%10;
+//         Console.WriteLine($"Third digit is {new_num}");
+//     }
+//     else if(num>99999 && num<1000000){
+//         int first_digit = num/1000;
+//         int new_num = first_digit%10;
+//         Console.WriteLine($"Third digit is {new_num}");
+//     }
+//     else if(num>999999 && num<10000000){
+//         int first_digit = num/10000;
+//         int new_num = first_digit%10;
+//         Console.WriteLine($"Third digit is {new_num}");
+//     }
+//     else if(num>9999999 && num<100000000){
+//         int first_digit = num/100000;
+//         int new_num = first_digit%10;
+//         Console.WriteLine($"Third digit is {new_num}");
+//     }
+//     else if(num>99999999 && num<1000000000){
+//         int first_digit = num/1000000;
+//         int new_num = first_digit%10;
+//         Console.WriteLine($"Third digit is {new_num}");
+//     }
+//     else
+//         Console.WriteLine($"The number is too big");
+// }
+// Console.WriteLine("Enter the number :");
+// int number = Convert.ToInt32(Console.ReadLine());
+// CutNumber(number);
 //Думаю, девятизначных чисел хватит. Но если нужно ещё больше, то можно копипастнуть последний элсиф,
 //изменить отрезок на следующий разряд и добавить нолик к делимому для first_digit
 
